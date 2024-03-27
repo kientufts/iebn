@@ -1,6 +1,7 @@
 DROP DATABASE IF EXISTS iebn;
 CREATE DATABASE iebn;
 
+USE iebn;
 
 -- FICO --
 CREATE TABLE fico (
