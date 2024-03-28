@@ -19,9 +19,6 @@ class FICO {
 
    // Read user input
    readInput();
-
-   // Validate User input
-    // if points change more than 100, need user to verify
    // Update database
    // Default output the average that month
    // Advanced output, plot the trend.
@@ -41,6 +38,7 @@ class FICO {
       System.out.println("Invalid time stamp");
       return false;
     }
+    //TODO Check the time enter and the realtime and make sure to warn user if there is much different
     return true;
   }
 }
