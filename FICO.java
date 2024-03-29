@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 class FICO {
@@ -6,20 +7,15 @@ class FICO {
   private static final int END = 9912;
 
   private static int month;
-  private int chase;
-  private int boa;
-  private int citi;
-  private int dcu;
-  private int discover;
-  private int transUnion;
-  private int equiFax;
 
-  public static void main(String args[]){
+  private List<FicoScore> scores;
+
+  public static void main(String[] args){
    System.out.println("Manage FICO system");
 
    // Read user input
    readInput();
-   // Update database
+   // Update file
    // Default output the average that month
    // Advanced output, plot the trend.
   }  
@@ -27,10 +23,12 @@ class FICO {
   private static void readInput(){
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("What month YYMM is this FICO infor for?: ");
+    System.out.println("What month YYMM is this FICO info for?: ");
     month = scanner.nextInt();
 
-    validateMonth(month);
+    if (validateMonth(month)) return;
+
+    chase
   }
 
   private static boolean validateMonth(int month){
